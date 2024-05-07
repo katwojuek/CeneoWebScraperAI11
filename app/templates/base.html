@@ -18,17 +18,17 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href=""><i class="bi bi-house-fill"></i> Main page</a>
+                        <a class="nav-link" href="{{ url_for('index') }}"><i class="bi bi-house-fill"></i> Main page</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href=""><i class="bi bi-cloud-download-fill"></i>
+                        <a class="nav-link" href="{{ url_for('extract') }}"><i class="bi bi-cloud-download-fill"></i>
 Extract opinions</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href=""><i class="bi bi-list-stars"></i> List of products</a>
+                        <a class="nav-link" href="{{ url_for('products') }}"><i class="bi bi-list-stars"></i> List of products</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href=""><i class="bi bi-person-circle"></i> About author</a>
+                        <a class="nav-link" href="{{ url_for('author') }}"><i class="bi bi-person-circle"></i> About author</a>
                     </li>
                 </ul>
             </div>
@@ -41,9 +41,9 @@ Extract opinions</a>
                     <p>This is base file</p>
                 {% endblock %}
             </div>
-    </section>
         </div>
-    <footer  class="container bg-dark text-secondary fixed-bottom text-center">
+    </section>
+    <footer  class="container bg-dark text-light fixed-bottom text-center">
         <p>Katarzyna Wójcik, Krakow University of Economics</p>
     </footer>
 </body>
